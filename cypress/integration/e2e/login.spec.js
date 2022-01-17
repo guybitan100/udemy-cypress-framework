@@ -1,4 +1,4 @@
-import { url } from '../../../config'
+import { url, username, password } from '../../../config'
 import Navbar from '../../page-objects/components/Navbar'
 import LoginPage from '../../page-objects/pages/LoginPage'
 
@@ -24,6 +24,6 @@ describe('Login Success Test', () => {
 	})
 
 	it('should login into application', function () {
-		LoginPage.login('username', 'password')
+		LoginPage.login(username, password)
 	})
 })
