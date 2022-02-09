@@ -33,12 +33,15 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo What is in this directory?
+          ls -a
           echo
+          echo Is Java Installed?
           java -version
           echo
           echo Is Git installed?
           git --version
           echo What about build tools?
-          mun--version
-          gradle--version
+          mvn --version
+          gradle --version
+          ant --version
           ant -version
